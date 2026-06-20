@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Cuisine de Vénus — Cuisine maison gastronomique pour chiens</title>
+  <meta name="description" content="La Cuisine de Vénus est un blog de recettes gastronomiques pour chiens, fondé par Sébastien F., cuisinier de métier et développeur web. Des recettes maison adaptées, testées par Vénus et Vanille."/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="Sébastien F. — La Cuisine de Vénus"/>
+  <link rel="canonical" href="https://TON-USERNAME.github.io/TON-REPO/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="La Cuisine de Vénus — Cuisine gastronomique pour chiens"/>
+  <meta property="og:description" content="Recettes maison pour chiens, pensées par un cuisinier de métier. Testées par Vénus et Vanille."/>
+  <meta property="og:url" content="https://lacuisinedevenus.fr"/>
+  <meta property="og:site_name" content="La Cuisine de Vénus"/>
+  <meta property="og:locale" content="fr_FR"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://lacuisinedevenus.fr/#author",
+        "name": "Sébastien F.",
+        "description": "Cuisinier de métier et développeur web pro, créateur du blog La Cuisine de Vénus. Propriétaire de Vénus (Cavalier King Charles) et Vanille (Chihuahua).",
+        "url": "https://lacuisinedevenus.fr",
+        "sameAs": ["https://lacuisinedevenus.fr", "https://github.com/lacuisinedevenus", "https://fr.pinterest.com/lacuisinedevenus"],
+        "knowsAbout": ["cuisine canine", "gastronomie pour chien",  "ration ménagère pour chien", "hygiène alimentaire", "bi-nutrition canine"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lacuisinedevenus.fr/#website",
+        "name": "La Cuisine de Vénus",
+        "url": "https://lacuisinedevenus.fr",
+        "description": "Blog de recettes gastronomiques pour chiens, pensées par un cuisinier.",
+        "inLanguage": "fr-FR",
+        "author": { "@id": "https://lacuisinedevenus.fr/#author" }
+      }
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:     '#1A0F00',
+            cream:   '#FAF5EE',
+            warm:    '#F3E8D4',
+            caramel: '#C4763A',
+            'caramel-light': '#E8A96A',
+            mid:     '#7A5C3A',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            sans:    ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+ <style>
+    body { font-family: 'DM Sans', sans-serif; background-color: #FAF5EE; color: #1A0F00; }
+    .font-display { font-family: 'Fraunces', serif; }
+ 
+    /* Masonry-style grid top */
+    .moodboard {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      grid-template-rows: 180px 120px;
+      gap: 6px;
+    }
+    .moodboard .big {
+      grid-row: 1 / 3;
+    }
+    .moodboard img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+ 
+    /* Bottom strip */
+    .strip {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr 1fr;
+      grid-template-rows: 110px;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .strip img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .strip .mid-img {
+      margin-top: -24px;
+      height: 134px;
+    }
+  </style>
+</head>
+
+<body class="bg-cream min-h-screen">
+
+  <!-- HERO -->
+  <div class="relative h-[280px] md:h-[320px]">
+    <div class="absolute inset-0 overflow-hidden">
+      <img src="img/banner.png" alt="" role="presentation"
+          class="w-full h-full object-cover object-center" style="filter: brightness(0.6);"/>
+    </div>
+    <div class="relative z-10 text-center pt-14 pb-20 px-6">
+      <p class="text-[.58rem] font-semibold tracking-[.29em] uppercase text-caramel mb-3"></p>
+      <h1 class="font-display font-black text-cream text-[clamp(1.8rem,5vw,2.8rem)] leading-[1.05] tracking-tight">
+  La Cuisine de Vénus<span style="display:inline-block; position:relative; top:-14px; transform:rotate(-20deg); line-height:0;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FAF5EE" aria-hidden="true">
+    <path d="M8.35 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm7.3 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm15 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM12 10c-3.5 0-7 2.5-7 6 0 2.5 2 4 4 4 1 0 2-.5 3-.5s2 .5 3 .5c2 0 4-1.5 4-4 0-3.5-3.5-6-7-6z"/>
+  </svg>
+</span>
+</h1>
+      <p class="text-cream text-[.82rem] mt-3 max-w-xs mx-auto leading-[1.7]">
+        De la gastronomie pour votre chien.
+      </p>
+    </div>
+    <!-- Vague -->
+    <div class="absolute bottom-0 left-0 right-0 z-10" style="line-height:0;">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;display:block;">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#FAF5EE"/>
+      </svg>
+    </div>
+    <!-- Avatar à cheval -->
+    <div class="absolute left-1/2 z-20" style="bottom:-44px; transform:translateX(-50%);">
+      <div class="w-[88px] h-[88px] rounded-full overflow-hidden border-4 border-cream">
+        <img src="img/ruby.webp" alt="Vénus, Cavalier King Charles" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORPS -->
+  <div class="max-w-[520px] mx-auto px-5 pt-16 pb-16">
+
+    <!-- Identité -->
+    <div class="text-center mb-8">
+      <p class="font-display font-bold text-[1.05rem] text-ink">La cuisine de Vénus.</p>
+      <p class="text-[.75rem] text-mid mt-1">By Sébastien · Cuisinier · Développeur web  </p>
+    </div>
+
+    <!-- Manifeste -->
+    <div class="mb-10 text-[.86rem] text-mid leading-[1.85] space-y-3 border-l-2 border-caramel/30 pl-4">
+      <p>
+        La Cuisine de Vénus, c'est un blog de recettes de cuisine maison dédiées aux chiens et réalisées par un cuisinier.
+        On y retrouve des classiques de la cuisine, des plats de rations ménagères, des friandises. 
+        Tout ça pensé pour la truffe : de la vraie gastronomie canine!
+      </p>
+      <p>
+        Ici on parle d'odeurs, de textures, de transformations culinaires.
+        Du cru, du cuit, de la croquette — pas de jugement.
+        Chaque recette est testée par Vénus et Vanille — leur enthousiasme, ou leur dédain poli, c'est notre seul critère d'approbation.
+      </p>
+    </div>
+
+
+
+
+    <!-- MOODBOARD TOP : grande image + 2 empilées -->
+    <div class="moodboard mb-8 overflow-hidden">
+      <div class="big overflow-hidden">
+        <img src="img/ration_lundi_saumon1.webp" alt="Ration ménagère pour chien au saumon qui croustille"/>
+      </div>
+      <div class="overflow-hidden">
+        <img src="img/gummies_coco.webp" alt="Gommes à mâcherp our chien à l'eau de coco"/>
+      </div>
+      <div class="overflow-hidden">
+        <img src="img/patisserie_chicken_cake3.webp" alt="Pâtisserie pour chien au poulet et aux croquettes - imitation d'un cheese cake"/>
+      </div>
+    </div>
+
+
+
+    <!-- 2 LIENS SEULEMENT -->
+    <nav aria-label="Liens" class="flex flex-col gap-3">
+
+      <a href="https://lacuisinedevenus.fr"
+         rel="noopener"
+         class="flex items-center justify-between w-full bg-warm text-ink px-6 py-4 hover:bg-caramel hover:text-cream transition-colors border border-ink/10 group">
+        <span class="font-display font-bold text-[.95rem]">La Cuisine de Vénus</span>
+        <span class="text-caramel text-sm" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://fr.pinterest.com/lacuisinedevenus"
+         rel="noopener"
+         class="flex items-center justify-between w-full bg-warm text-ink px-6 py-4 hover:bg-caramel hover:text-cream transition-colors border border-ink/10 group">
+        <span class="font-display font-bold text-[.95rem]">Pinterest</span>
+        <span class="text-caramel group-hover:text-cream text-sm" aria-hidden="true">→</span>
+      </a>
+
+    </nav>
+
+
+
+     <!-- MOODBOARD TOP : grande image + 2 empilées -->
+    <div class="moodboard mt-8 overflow-hidden">
+      <div class="big overflow-hidden">
+        <img src="img/gateau_moelleux_banane_cocolat.webp" alt="Pâtisserie pour chien banane, fromage frais et glaçage à la caroube"/>
+      </div>
+      <div class="overflow-hidden">
+        <img src="img/ration_mercredi_poulet4.webp" alt="Ration ménagère pour chien améliorée au poulet et aux légumes"/>
+      </div>
+      <div class="overflow-hidden">
+        <img src="img/ration_vendredi_sardine2.webp" alt="Ration ménagère pour chien améliorée à la sardine et aux légumes."/>
+      </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center mt-14">
+      <p class="text-[.65rem] text-mid/40">© 2026 La Cuisine de Vénus</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
